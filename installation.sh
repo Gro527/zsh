@@ -20,10 +20,12 @@ echo $'alias bb=\'blade build . --bundle=debug\'' >> ~/.zshrc
 echo $'alias glines=\'bash ~/glines.sh\'' >> ~/.zshrc
 echo $'alias k=\'bash ~/kill.sh\'' >> ~/.zshrc
 echo $'kinit -kt $current_dir/keytab/guhaoping.keytab guhaoping' >> ~/.zshrc
-echo $'export PYTHONPATH=~/qrec/:$PYTHONPATH' >> ~/.zshrc
+echo $'export PYTHONPATH=~/offline_workspace/:$PYTHONPATH' >> ~/.zshrc
 
-git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 echo "paste following line to ur ~/.zshrc"
 echo "plugins=(git zsh-syntax-highlighting zsh-autosuggestions)"
+
+
