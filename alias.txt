@@ -1,0 +1,31 @@
+alias hls='doas hdfs dfs -ls'
+alias htxt='doas hdfs dfs -D io.compression.codec.snappy.native=true -text'
+alias hdu='doas hdfs dfs -du'
+alias hdu='doas hdfs dfs -du'
+alias hget='doas hdfs dfs -get'
+alias gcheck='git checkout -b guhaoping'
+alias gst='git stash'
+alias gstp='git stash pop'
+alias gfetch='git fetch origon master'
+alias grebase='git rebase origin/master'
+alias gc='git commit'
+alias gp='git push origin guhaoping'
+alias kk='kinit -kt /data08/home/guhaoping/keytab/guhaoping.keytab guhaoping'
+alias bbd='blade build . --update-deps --bundle=debug'
+alias bb='blade build . --bundle=debug'
+alias glines='bash ~/glines.sh'
+alias k='bash ~/kill.sh'
+alias tn='tmux new -s'   # new tmux session
+alias td='tmux detach'   # detach tmux session
+alias tls='tmux ls'      # list all tmux sessions
+alias ta='tmux attach -t' # attach tmux session
+alias tk='tmux kill-session -t' # kill tmux session
+alias tsw='tmux switch -t' # switch tmux session
+alias trname='tmux rename-session -t' # change tmux session name
+alias tsp='tmux split-window' # split tmux windows
+alias tkp='tmux kill-pane' # kill tmux panel
+kinit -kt ~/keytab/guhaoping.keytab guhaoping
+export TERM=xterm-256color # for auto-suggestion in tmux
+export PYTHONPATH=~/offline_workspace/:$PYTHONPATH
+export PATH=~/maven/apache-maven-3.6.3/bin:$PATH
+export LD_LIBRARY_PATH=~/so/:$LD_LIBRARY_PATH
