@@ -10,7 +10,7 @@ alias gfetch='git fetch origon master'
 alias grebase='git rebase origin/master'
 alias gc='git commit'
 alias gp='git push origin guhaoping'
-alias kk='kinit -kt /data08/home/guhaoping/keytab/guhaoping.keytab guhaoping'
+alias kk='kinit -kt /home/byteide/keytab/kt.keytab guhaoping'
 alias bbd='blade build . --update-deps --bundle=debug'
 alias bb='blade build . --bundle=debug'
 alias glines='bash ~/glines.sh'
@@ -29,3 +29,4 @@ export TERM=xterm-256color # for auto-suggestion in tmux
 export PYTHONPATH=~/offline_workspace/:$PYTHONPATH
 export PATH=~/maven/apache-maven-3.6.3/bin:$PATH
 export LD_LIBRARY_PATH=~/so/:$LD_LIBRARY_PATH
+export FILTERFLAGS='-lz -lssl -lcrypto'
