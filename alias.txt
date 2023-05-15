@@ -24,7 +24,7 @@ alias tsw='tmux switch -t' # switch tmux session
 alias trname='tmux rename-session -t' # change tmux session name
 alias tsp='tmux split-window' # split tmux windows
 alias tkp='tmux kill-pane' # kill tmux panel
-kinit -kt ~/keytab/guhaoping.keytab guhaoping
+kinit -kt ~/keytab/kt.keytab guhaoping
 export TERM=xterm-256color # for auto-suggestion in tmux
 export PYTHONPATH=~/offline_workspace/:$PYTHONPATH
 export PATH=~/maven/apache-maven-3.6.3/bin:$PATH
